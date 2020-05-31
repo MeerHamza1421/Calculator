@@ -1,0 +1,78 @@
+.btns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100px)[3];
+      grid-template-columns: repeat(3, 100px);
+  -ms-grid-rows: (80px)[6];
+      grid-template-rows: repeat(6, 80px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 5px;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+      grid-template-areas: ". . plus"  ". . minu "  ". . pro" ". . div"  ". . equal"  "zero zero equal";
+}
+
+.btns #btn-0, .btns #btn-1, .btns #btn-2, .btns #btn-3, .btns #btn-4, .btns #btn-5, .btns #btn-6, .btns #btn-7,
+.btns #btn-8, .btns #btn-9, .btns #btn-10, .btns #btn-11, .btns #btn-12, .btns #btn-13, .btns #btn-14, .btns #btn-15 {
+  background-color: white;
+  color: black;
+}
+
+.btns #btn-0:hover, .btns #btn-1:hover, .btns #btn-2:hover, .btns #btn-3:hover, .btns #btn-4:hover, .btns #btn-5:hover, .btns #btn-6:hover, .btns #btn-7:hover,
+.btns #btn-8:hover, .btns #btn-9:hover, .btns #btn-10:hover, .btns #btn-11:hover, .btns #btn-12:hover, .btns #btn-13:hover, .btns #btn-14:hover, .btns #btn-15:hover {
+  cursor: pointer;
+  background-color: #c01818;
+  border: none;
+  color: white;
+}
+
+.btns #btn-0 {
+  background-color: #e6e62f;
+}
+
+.btns #btn-5 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: equal;
+}
+
+.btns #btn-1, .btns #btn-2, .btns #btn-3, .btns #btn-4, .btns #btn-5 {
+  background-color: black;
+  color: blanchedalmond;
+  font-size: 20px;
+}
+
+.btns #btn-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: plus;
+}
+
+.btns #btn-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: minu;
+}
+
+.btns #btn-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: pro;
+}
+
+.btns #btn-4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: div;
+}
+
+.btns #btn-15 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+}
+/*# sourceMappingURL=Number.css.map */

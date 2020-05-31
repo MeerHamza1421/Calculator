@@ -1,0 +1,15 @@
+@mixin flex_property($content) {
+    display: flex;
+   justify-content: $content;
+}
+.display-panel{
+     @include flex_property(center);
+.disp{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    height: 6rem;
+    width: 21%;
+}
+}

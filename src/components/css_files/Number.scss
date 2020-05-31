@@ -1,0 +1,56 @@
+.btns{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(6, 80px);
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-areas: ". . plus"  ". . minu "  ". . pro"
+    ". . div"  ". . equal"  "zero zero equal";
+
+    #btn-0,#btn-1,#btn-2,#btn-3,#btn-4,#btn-5,#btn-6,#btn-7,
+    #btn-8,#btn-9,#btn-10,#btn-11,#btn-12,#btn-13,#btn-14,#btn-15{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(192, 24, 24);
+            border: none;
+            color: white;
+        }
+    }
+
+    #btn-0{
+        background-color: rgb(230, 230, 47);
+    }
+
+    #btn-5{
+        grid-area: equal;
+    }
+
+    #btn-1,#btn-2,#btn-3,#btn-4,#btn-5{
+        background-color: black;
+        color: blanchedalmond;
+        font-size: 20px;
+    }
+
+    #btn-1{
+        grid-area: plus;
+    }
+
+    #btn-2{
+        grid-area: minu;
+    }
+
+    #btn-3{
+        grid-area: pro;
+    }
+
+    #btn-4{
+        grid-area:div ;
+    }
+    
+    #btn-15{
+        grid-area: zero;
+    }
+}
